@@ -3,6 +3,7 @@ You can run the code through terminal. Open your terminal and navigate to the di
 On terminal type "python3 git_status.py" to run the code.
 
 The code will first ask you whether you want to clone a repository to the local machine or not. Press 0 for No and 1 for Yes.
+If repository already exists in local machine press 0 otherwise press 1.
 
 If you pressed 0, then it will ask you to enter the path where the repository is stored in your local machine.
 

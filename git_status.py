@@ -14,7 +14,7 @@ elif (r == 1):
     path2 = input("Enter the path for local machine where you want to clone the repository: ")
     git.Git(path2).clone(path1)
     a = path1.split("/")
-    repo = Repo(path2 + "/" + a[-1])
+    repo = Repo(path2 + "/" + a[-1].split(".")[0])
 else:
     raise Exception("Sorry, please Enter either 0 or 1.")
 
