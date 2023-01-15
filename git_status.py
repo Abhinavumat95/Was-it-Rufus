@@ -1,5 +1,6 @@
 # Importing necessary packages and libraries
 from git import Repo
+import git
 import time
 from datetime import date, datetime
 
@@ -11,7 +12,7 @@ if (r == 0):
 elif (r == 1):
     path1 = input("Enter path for your repository: ")
     path2 = input("Enter the path for local machine where you want to clone the repository: ")
-    Repo.clone_from(path1, path2)
+    git.Git(path2).clone(path1)
     repo = Repo(path2)
 else:
     raise Exception("Sorry, please Enter either 0 or 1.")
